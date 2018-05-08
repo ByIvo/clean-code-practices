@@ -10,7 +10,7 @@
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=marlon)]()
 
 ### Anderson Lemke
-[![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=lemke)]()
+[![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=lemke)](https://github.com/matheuslemke)
 
 ### Felipe Santolin
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=santolin)]()

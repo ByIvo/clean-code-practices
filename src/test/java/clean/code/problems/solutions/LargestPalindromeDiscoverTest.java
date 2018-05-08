@@ -17,4 +17,21 @@ public class LargestPalindromeDiscoverTest
 		assertEquals((Long) 9009L, largestPalindromeFound);
 	}
 	
+	@Test
+	public void shouldReturnTheLargestPalindromeWithThreeDigits()
+	{
+		LargestPalindromeDiscover largestPalindromeDiscover = new LargestPalindromeDiscover();
+			
+		Long largestPalindromeFound = largestPalindromeDiscover.withNDigitis(3L);
+		assertEquals((Long) 906609L, largestPalindromeFound);
+	}
+	
+	@Test(expected=RuntimeException.class)
+	public void ifTheNDigitsInformedIsSmallerThan2DigitsThrowsAnException()
+	{
+		LargestPalindromeDiscover largestPalindromeDiscover = new LargestPalindromeDiscover();
+			
+		largestPalindromeDiscover.withNDigitis(1L);
+	}
+	
 }

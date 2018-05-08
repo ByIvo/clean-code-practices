@@ -1,7 +1,7 @@
 package clean.code.problems;
 
 
-public class Problem2
+public class Problem4
 {
 	public static void main(String[] args)
 	{

@@ -13,8 +13,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg?branch=marlon)](https://coveralls.io/github/ByIvo/clean-code-practices?branch=marlon)
 
 ### Anderson Lemke
-
-[![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=lemke)]()
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=lemke)](https://github.com/matheuslemke)
 [![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg?branch=lemke)](https://coveralls.io/github/ByIvo/clean-code-practices?branch=lemke)
 

@@ -1,6 +1,5 @@
 package clean.code.problems;
 
-
 import clean.code.solutions.problem55.LychrelNumberCounterLessThanTenThousand;
 
 public class Problem55 {

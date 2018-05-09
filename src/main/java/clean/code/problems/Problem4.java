@@ -1,20 +1,34 @@
 package clean.code.problems;
 
-import java.util.Scanner;
-
-import clean.code.problems.solutions.LargestPalindromeDiscover;
-
 public class Problem4
 {
 	public static void main(String[] args)
 	{
-		final Scanner scanner = new Scanner(System.in);
-		long digits = scanner.nextLong();
+		resolveTheProblem();
+	}
+
+	public static void resolveTheProblem(){
+		int largest3DigitsNumber = 999;
 		
-		LargestPalindromeDiscover largestPalindromeDiscover = new LargestPalindromeDiscover();
-		Long largestPalindromeFound = largestPalindromeDiscover.withNDigitis(digits);
-		
-		System.out.println(largestPalindromeFound);
-		scanner.close();
+		int largestPalindrome = 0;
+
+		for (int i = 1; i <= largest3DigitsNumber; i++) {
+			for (int j = 1; j <= largest3DigitsNumber ; j++) {
+				int result = i*j;
+				if(isPalindrome(result) && result > largestPalindrome){
+					largestPalindrome = result;
+				}
+			}
+		}
+		System.out.println("Largest Palindrome from 3 digits: "+largestPalindrome);
+	}
+
+	private static boolean isPalindrome(int result) {
+		String resultString = String.valueOf(result);
+		String resultReverse = new StringBuffer(resultString).reverse().toString();
+		if(resultReverse.equals(resultString)){
+			return true;
+		}
+		return false;
 	}
 }

@@ -1,4 +1,4 @@
-package clean.code.solutions.problem4;
+package clean.code.solutions;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -11,12 +11,12 @@ public class PalindromeCheckerTest {
 
   @Test(expected = UnsupportedOperationException.class)
   public void deveLancarExcecaoSeForNulo() {
-    palindromeChecker.isPalindrome(null);
+    palindromeChecker.is(null);
   }
 
   @Test
   public void deveRetornarVerdadeiroSeForVazio() {
-    boolean isPalindrome = palindromeChecker.isPalindrome("");
+    boolean isPalindrome = palindromeChecker.is("");
 
     assertTrue(isPalindrome);
   }
@@ -25,7 +25,7 @@ public class PalindromeCheckerTest {
   public void deveRetornarVerdadeiroSeTiverUmDigito() {
     String number = "1";
 
-    boolean isPalindrome = palindromeChecker.isPalindrome(number);
+    boolean isPalindrome = palindromeChecker.is(number);
 
     assertTrue(isPalindrome);
   }
@@ -34,7 +34,7 @@ public class PalindromeCheckerTest {
   public void deveRetornarVerdadeiroSeForPalindromo() {
     String number = "9009";
 
-    boolean isPalindrome = palindromeChecker.isPalindrome(number);
+    boolean isPalindrome = palindromeChecker.is(number);
 
     assertTrue(isPalindrome);
   }
@@ -43,7 +43,7 @@ public class PalindromeCheckerTest {
   public void deveRetornarFalsoSeNaoForPalindromo() {
     String number = "900";
 
-    boolean isPalindrome = palindromeChecker.isPalindrome(number);
+    boolean isPalindrome = palindromeChecker.is(number);
 
     assertFalse(isPalindrome);
   }

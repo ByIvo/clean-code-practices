@@ -1,5 +1,6 @@
 package clean.code.problems.solutions;
 
+import java.math.BigInteger;
 
 public class PalindromeVerifier
 {
@@ -9,6 +10,11 @@ public class PalindromeVerifier
 		valueChars = value.toString();
 	}
 	
+	public PalindromeVerifier(BigInteger value)
+	{
+		this.valueChars = value.toString();
+	}
+
 	public boolean isPalindrome() {
 		if(valueChars.length() == 1) {
 			return false;

@@ -2,6 +2,8 @@ package clean.code.problems.solutions;
 
 import static org.junit.Assert.*;
 
+import java.math.BigInteger;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -33,6 +35,14 @@ public class PalindromeVerifierTest
 	public void oddDigitsNumberCanAlsoBePalindrome()
 	{
 		PalindromeVerifier palindromeVerifier = new PalindromeVerifier(91519L);
+		boolean isPalindrome = palindromeVerifier.isPalindrome();
+		assertTrue(isPalindrome);
+	}
+	
+	@Test
+	public void canVerifyPalindromesEvenWithBigIntegerConstructor()
+	{
+		PalindromeVerifier palindromeVerifier = new PalindromeVerifier(BigInteger.valueOf(91519L));
 		boolean isPalindrome = palindromeVerifier.isPalindrome();
 		assertTrue(isPalindrome);
 	}

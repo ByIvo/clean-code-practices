@@ -1,10 +1,15 @@
 package clean.code.solutions.problem4;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import clean.code.solutions.PalindromeChecker;
 
 =======
 >>>>>>> Problem 4 solution
+=======
+import clean.code.solutions.PalindromeChecker;
+
+>>>>>>> Problem 55 solution and extracting common class
 public class LargestPalindromeFinderForProductThreeDigit {
 
   private static final int MAXIMUM_THREE_DIGIT_NUMBER = 999;
@@ -34,10 +39,14 @@ public class LargestPalindromeFinderForProductThreeDigit {
 
   private boolean isPalindrome(int product) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return palindromeChecker.is(Integer.toString(product));
 =======
     return palindromeChecker.isPalindrome(Integer.toString(product));
 >>>>>>> Problem 4 solution
+=======
+    return palindromeChecker.is(Integer.toString(product));
+>>>>>>> Problem 55 solution and extracting common class
   }
 
 }

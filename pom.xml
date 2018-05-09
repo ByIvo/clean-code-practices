@@ -5,6 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>CleanCode</name>
   
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/junit/junit -->
 	<dependency>
@@ -22,9 +26,6 @@
 		    <groupId>org.eluder.coveralls</groupId>
 		    <artifactId>coveralls-maven-plugin</artifactId>
 		    <version>4.3.0</version>
-		    <configuration>
-		        <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
-		    </configuration>
 		</plugin>
 		
 		<plugin>

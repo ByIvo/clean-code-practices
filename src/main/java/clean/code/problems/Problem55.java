@@ -1,10 +1,5 @@
 package clean.code.problems;
 
-import java.util.Scanner;
-
-import clean.code.problems.solutions.CountInterval;
-import clean.code.problems.solutions.LychrelNumberCounter;
-
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;

@@ -5,22 +5,59 @@ import java.util.Scanner;
 import clean.code.problems.solutions.CountInterval;
 import clean.code.problems.solutions.LychrelNumberCounter;
 
-public class Problem55
-{
-	public static void main(String[] args)
-	{
-		final Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("Which will be the biggest number I will prove to be a Lychrel number?");
-		Long lastNumber = scanner.nextLong();
-		System.out.println("How many times should I try to prove its reverse sum is a palindrome?");
-		Integer maxIterations = scanner.nextInt();
-		
-		LychrelNumberCounter lychrelNumberCounter = LychrelNumberCounter.proveAValueIsLychrelNumberWithMax(maxIterations);
-		CountInterval countInterval = new CountInterval(1L, lastNumber);
-		Long lychrelNumbersCountage = lychrelNumberCounter.countBeetwen(countInterval);
-		
-		System.out.println(lychrelNumbersCountage);
-		scanner.close();
-	}
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Problem55 {
+
+  private static int iterations = 0;
+  private static boolean isLychrelNumber = false;
+
+  public static void main(String[] args) {
+    lychrelNumbers();
+  }
+
+  private static void lychrelNumbers() {
+    List<BigInteger> lychrelNumbers = new ArrayList<BigInteger>();
+
+    int largestNumber = 10000;
+    for (int i = 1; i <= largestNumber; i++) {
+      iterations = 0;
+      isLychrelNumber = false;
+      isLychrelNumber(BigInteger.valueOf(i));
+      if(isLychrelNumber){
+        lychrelNumbers.add(BigInteger.valueOf(i));
+      }
+    }
+
+    System.out.println("How many? "+lychrelNumbers.size());
+
+  }
+
+  private static void isLychrelNumber(BigInteger numberToVerify) {
+    iterations++;
+    if(iterations > 50){
+      isLychrelNumber = true;
+    }
+    BigInteger reverseNumber = reverseNumber(numberToVerify);
+    BigInteger result = numberToVerify.add(reverseNumber);
+    if(!isPalindrome(result) && !isLychrelNumber){
+      isLychrelNumber(result);
+    }
+  }
+
+
+  private static boolean isPalindrome(BigInteger result) {
+    String resultString = String.valueOf(result);
+    String resultReverse = String.valueOf(reverseNumber(result));
+    return resultReverse.equals(resultString);
+  }
+
+  private static BigInteger reverseNumber(BigInteger toReverse){
+    String resultString = String.valueOf(toReverse);
+    String resultReverse = new StringBuffer(resultString).reverse().toString();
+    return new BigInteger(resultReverse);
+  }
+
 }

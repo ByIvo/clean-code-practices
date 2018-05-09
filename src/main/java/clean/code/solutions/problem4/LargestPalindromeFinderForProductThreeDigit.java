@@ -1,7 +1,10 @@
 package clean.code.solutions.problem4;
 
+<<<<<<< HEAD
 import clean.code.solutions.PalindromeChecker;
 
+=======
+>>>>>>> Problem 4 solution
 public class LargestPalindromeFinderForProductThreeDigit {
 
   private static final int MAXIMUM_THREE_DIGIT_NUMBER = 999;
@@ -30,7 +33,11 @@ public class LargestPalindromeFinderForProductThreeDigit {
   }
 
   private boolean isPalindrome(int product) {
+<<<<<<< HEAD
     return palindromeChecker.is(Integer.toString(product));
+=======
+    return palindromeChecker.isPalindrome(Integer.toString(product));
+>>>>>>> Problem 4 solution
   }
 
 }

@@ -2,7 +2,7 @@
 
 ### Master
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg)](https://travis-ci.org/ByIvo/clean-code-practices/branches)
-[![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg](https://coveralls.io/github/ByIvo/clean-code-practices)
+[![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg?branch=master)](https://coveralls.io/github/ByIvo/clean-code-practices?branch=master)
 
 ### Ivo Batistela
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=ivo)](https://github.com/ByIvo)

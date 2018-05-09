@@ -30,7 +30,7 @@ public class LargestPalindromeFinderForProductThreeDigit {
   }
 
   private boolean isPalindrome(int product) {
-    return palindromeChecker.isPalindrome(Integer.toString(product));
+    return palindromeChecker.is(Integer.toString(product));
   }
 
 }

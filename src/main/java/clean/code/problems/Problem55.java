@@ -1,5 +1,6 @@
 package clean.code.problems;
 
+
 import clean.code.solutions.problem55.LychrelNumberCounterLessThanTenThousand;
 
 public class Problem55 {
@@ -12,4 +13,5 @@ public class Problem55 {
     System.out.println(lychrelNumbers);
 
   }
+
 }

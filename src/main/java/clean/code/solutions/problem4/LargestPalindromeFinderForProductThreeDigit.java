@@ -2,11 +2,6 @@ package clean.code.solutions.problem4;
 
 import clean.code.solutions.PalindromeChecker;
 
-<<<<<<< HEAD
-=======
-
-import clean.code.solutions.PalindromeChecker;
-
 public class LargestPalindromeFinderForProductThreeDigit {
 
   private static final int MAXIMUM_THREE_DIGIT_NUMBER = 999;

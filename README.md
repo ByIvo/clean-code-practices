@@ -14,7 +14,10 @@
 
 ### Anderson Lemke
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=lemke)](https://github.com/matheuslemke)
+<<<<<<< HEAD
 [![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg?branch=lemke)](https://coveralls.io/github/ByIvo/clean-code-practices?branch=lemke)
+=======
+>>>>>>> e6389034a935cf07e7f1bccbecf5c826d9390e75
 
 ### Felipe Santolin
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=santolin)]()

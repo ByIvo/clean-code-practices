@@ -18,4 +18,4 @@
 
 ### Felipe Santolin
 [![Travis](https://travis-ci.org/ByIvo/clean-code-practices.svg?branch=santolin)]()
-[![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg?branch=santolin)](https://coveralls.io/github/ByIvo/clean-code-practices?branch=sntolin)
+[![Coverage Status](https://coveralls.io/repos/github/ByIvo/clean-code-practices/badge.svg?branch=santolin)](https://coveralls.io/github/ByIvo/clean-code-practices?branch=santolin)
